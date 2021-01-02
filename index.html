@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2021</title>
+
+    <link rel="shortcut icon" href="https://i.imgur.com/4rtBi1F.png">
+
+
+    <meta property="og:image" content="https://images.unsplash.com/photo-1573126617899-41f1dffb196c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+    <meta property="og:title" content="2021년 인사">
+    <meta property="og:description" content="2021년 신축년(辛丑年) 새해 인사">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Nanum Gothic';
+        }
+
+        body {
+            /* background-color: mistyrose; */
+            background-color: black;
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            margin: 200px auto 0 auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .gif-img {
+            width: 200px;
+            height: 150px;
+            background-image: url('https://t1.daumcdn.net/cfile/blog/272664415870231611?original');
+
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 0 auto;
+            border-radius: 300px;
+
+            border: 1px solid #f18d23;
+            box-shadow: 0px 0px 30px 10px #f18d23;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+            color: blue;
+
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 30px 0px #ffffff;
+
+        }
+
+        .from {
+            text-align: right;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+        }
+
+        .gif-img {
+            margin: 50px auto 0 auto;
+        }
+
+        h1 {
+            font-size: 18px;
+        }
+
+        .envelope {
+            margin: 150px auto 0px auto;
+        }
+
+    </style>
+
+    <script>
+        function open_letter() {
+            alert("봉투 봉투 열렸네~~~")
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+        function go_gif(){
+            alert('부자되세요~~~~')
+            // window.location.href=''
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어주시요.</h2>
+    </div>
+    <div class="letter-open">
+        <div class="gif-img" onclick="go_gif()">
+        </div>
+        <h1>2021년 새 해 복(輻) 주렁주렁 받으십시요.</h1>
+        <div class="messagebox">
+            작년(2020년) 한 해 다사다난(多事多難) 했습니다.. <br />
+            많은 분. 덕분에 힘을. 낼 수 있었습니다..<br />
+            2021년 새 해에도. 함께 힘내시고 건강하시길. 바랍니다요.. <br />
+            <p class="from">2021.01.02 李倫娥. 드림.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
